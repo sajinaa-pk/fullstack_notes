@@ -1,0 +1,74 @@
+Installation commands django
+===========================
+
+
+pip install django
+
+django-admin --version
+
+django-admin startproject projname
+
+
+
+Check dJango Version
+=========================
+python -m django --version
+
+create a project
+================
+
+python -m django startproject mysite
+
+python -m django startapp myapp
+
+Run django Project
+==================
+
+python manage.py runserver
+
+Migrate
+=========
+python manage.py makemigrations
+
+python manage.py migrate
+
+create virtual environment
+==========================
+
+
+pip install virtualenv
+
+
+virtualenv mypython
+
+Activate the virtual environment
+You can activate the python environment by running the following command:
+
+Mac OS / Linux
+source mypython/bin/activate
+
+
+Windows
+mypthon\Scripts\activate
+
+You should see the name of your virtual environment in brackets on your terminal line e.g. (mypython).
+
+Any python commands you use will now work with your virtual environment
+
+Deactivate the virtual environment
+To decativate the virtual environment and use your original Python environment, simply type ‘deactivate’.
+
+deactivate
+
+Install MySQL
+===============
+python -m pip install mysql
+
+Install PhonenumberField in Django
+= = = = = = = = = = = = = = = = =
+
+pip install django-phonenumber-field[phonenumbers]
+or
+
+pipenv install django-phonenumber-field
+pip install phonenumbers

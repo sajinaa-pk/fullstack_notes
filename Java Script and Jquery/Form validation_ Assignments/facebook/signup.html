@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="signup.js"></script>
+    <title>facebook signup</title>
+    <link rel="stylesheet" href="signup.css" type="text/css">
+    
+</head>
+<body>
+    <h1 id="fb">facebook</h1>
+    <div id="main-div">
+        <div id="middle">
+           <h2>Create a new account</h2>
+           <p id="head">It's quick and easy.</p><hr>
+        </div>
+
+        <div class="labels">
+        <form onsubmit="validation()" name="fbform">
+            <div id="name-div">
+                <input type="text" placeholder="First name" class="textbox" name="FName">
+                <input type="text" placeholder="Surname" class="textbox" name="SName">
+                <input type="text" placeholder="Mobile number" class="textbox" name="Num" pattern="[0-9]{10}">
+                <input type="text" placeholder="Email address" class="textbox" name="Email">
+            
+            <input type="password" placeholder="New password" id="pwd" name="Password">
+            </div>
+            <div id="dob-div">
+                <label class="dob-gender">Date of birth</label>
+                <img class="qnimg" src="qnicon.png"><br>
+                <select class="list" name="Day">
+                   <option></option>
+                   <option>1</option>
+                   <option>2</option>
+                   <option>3</option>
+                   <option>4</option>
+                   <option>5</option>
+                   <option>6</option>
+                   <option>7</option>
+                   <option>8</option>
+                   <option>9</option>
+                   <option>10</option>
+                   <option>11</option>
+                   <option>12</option>
+                   <option>13</option>
+                   <option>14</option>
+                   <option>15</option>
+                   <option>16</option>
+                   <option>17</option>
+                   <option>18</option>
+                   <option>19</option>
+                   <option>20</option>
+                   <option>21</option>
+                   <option>22</option>
+                   <option>23</option>
+                   <option>24</option>
+                   <option>25</option>
+                   <option>26</option>
+                   <option>27</option>
+                   <option>28</option>
+                   <option>29</option>
+                   <option>30</option>
+                   <option>31</option>
+                </select>
+                <select class="list" name="Month">
+                    <option></option>
+                   <option>Jan</option>
+                   <option>Feb</option>
+                   <option>Mar</option>
+                   <option>Apr</option>
+                   <option>May</option>
+                   <option>Jun</option>
+                   <option>Jul</option>
+                   <option>Aug</option>
+                   <option>Sep</option>
+                   <option>Oct</option>
+                   <option>Nov</option>
+                   <option>Dec</option>
+
+                </select>
+                <select class="list" name="Year">
+                    <option></option>
+                   <option>2022</option>
+                   <option>2021</option>
+                   <option>2020</option>
+                   <option>2019</option>
+                   <option>2018</option>
+                   <option>2017</option>
+                   <option>2016</option>
+                   <option>2015</option>
+                   <option>2014</option>
+                   <option>2013</option>
+                   <option>2012</option>
+                   <option>2011</option>
+                   <option>2010</option>
+                   <option>2009</option>
+                   <option>2008</option>
+                   <option>2007</option>
+                   <option>2006</option>
+                   <option>2005</option>
+                   <option>2004</option>
+                   <option>2003</option>
+                   <option>2002</option>
+                   <option>2001</option>
+                   <option>2000</option>
+                   <option>1999</option>
+                   <option>1998</option>
+                   <option>1997</option>
+                   <option>1996</option>
+                   <option>1995</option>
+                   <option>1994</option>
+                   <option>1993</option>
+                   <option>1992</option>
+                   <option>1991</option>
+                   <option>1990</option>
+                   <option>1989</option>
+                   <option>1988</option>
+                   <option>1987</option>
+                   <option>1986</option>
+                   <option>1985</option>
+                   <option>1984</option>
+                   <option>1983</option>
+                   <option>1982</option>
+                   <option>1981</option>
+                   <option>1980</option>
+                   <option>1979</option>
+                   <option>1978</option>
+                </select>
+                
+                <label class="dob-gender">Gender</label>
+                <img class="qnimg" src="qnicon.png"><br>
+                <div class="female">
+                   <label class="test">Female</label>
+                   <input type="radio"  value="Female" class="female1" name="gender">
+                </div>
+                <div class="female">
+                   <label class="test">Male</label>
+                   <input type="radio" value="Male" class="female1" name="gender">
+                </div>
+                <div class="female">
+                    <label class="test">Custom</label>
+                    <input type="radio" value="Custom" class="female1" name="gender">
+                </div>
+            </div>
+          
+        <p id="para">By clicking Sign Up, you agree to our Terms, Data Policy and Cookie Policy. <br>
+            You may receive SMS notifications from us and can opt out at any time.</p>
+        <div id="button">
+            <input type="submit" id="button1" value="Sign Up"><br><br>
+
+            <a href="demo.html">Already have an account?</a>
+        </div>
+    </form>
+        </div>
+
+    </div>
+</body>
+</html>

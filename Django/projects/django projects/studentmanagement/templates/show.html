@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Management</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+<body>
+    <table class="table table-bordered">
+        <tr>
+            <th>ID</th>
+            <th>Student ID</th>
+            <th>STudent Name</th>
+            <th>Student EMail</th>
+            <th>Student Contact</th>
+            <th>Actions</th>
+        </tr>
+        {% for i in students %}
+         <tr>
+             <td>{{i.id}}</td>
+             <td>{{i.sid}}</td>
+             <td>{{i.sname}}</td>
+             <td>{{i.semail}}</td>
+             <td>{{i.scontact}}</td>
+             <td><a class="btn btn-primary" href="/edit/{{i.id}}">EDIT</a></td>
+             <td><a class="btn btn-danger" href="/remove/{{i.id}}">DELETE</a></td>
+         </tr>
+         {% endfor %}
+    </table>
+   <center><a href="/index" class="btn btn-primary">ADD New</a></center> 
+</body>
+</html>

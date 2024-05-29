@@ -1,0 +1,37 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block title %}category{% endblock %}
+
+
+{% block main-content %}
+<h1>Category {{val}}</h1>
+ <div class ="container my-5">
+   <div class="row">
+    <div class="col-sm-3">
+        {% for val in title %}
+        {{val.title}}
+        {% endfor %}
+
+ </div> 
+     <div class="col-sm-9"></div>
+      <div class="row">
+        {% for prod in products %}
+          <div class="col text-center mb-4">
+        
+        <a href ='#' class ="btn">
+            <div>
+                <img src="{{prod.product_image_image.url}}" width="300px" height="300px" />
+                <div class="fw=bold">{{prod.title}}</div>
+                <div class="fw-bold text-danger">
+                    rs.{{prod.discounted_price}}/d-block
+                    <small class="fw-light text-decoration-line-through">{{prod.sellinf_price}}</small>
+            </div>
+            </div>
+        </a>
+    </div> 
+        {% endfor %}
+      </div>
+ </div>
+ </div> 
+
+{% endblock main-content %}

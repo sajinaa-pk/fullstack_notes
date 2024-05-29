@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Management</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+{% load static %}
+<style>
+    body{
+    background-image: url("{% static 'img1.jpg' %}");
+    }
+</style>
+</head>
+<body>
+    <form method="post" action="/index">
+        {% csrf_token %}
+    <div class="container">
+        <div class="form-group-row">
+            <label class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-6"><h1>Enter your Details</h1></div>
+        </div>
+        <div class="form-group-row">
+            <label class="col-sm-2 col-form-label">Student ID</label>
+            <div class="col-sm-6">{{f.sid}}</div>
+        </div>
+        <div class="form-group-row">
+            <label class="col-sm-2 col-form-label">Student Name</label>
+            <div class="col-sm-6">{{f.sname}}</div>
+        </div>
+        <div class="form-group-row">
+            <label class="col-sm-2 col-form-label">Student Email</label>
+            <div class="col-sm-6">{{f.semail}}</div>
+        </div>
+        <div class="form-group-row">
+            <label class="col-sm-2 col-form-label">Student Contact</label>
+            <div class="col-sm-6">{{f.scontact}}</div>
+        </div>
+        <input type="submit" class="btn btn-success"/>
+    </div>
+    </form>
+    
+</body>
+</html>

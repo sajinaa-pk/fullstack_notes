@@ -1,0 +1,50 @@
+list1=['apple','banana','cherry','grapes','mango','orange',False,True,20,60,9.5,'kiwi']
+list1[0]->apple
+list1[1]->banana
+
+negative indexing
+slicing from the end.index of last element is -1,second last element -2 and so
+list1[-1]->kiwi
+list1[-2]->9.5
+list1[-3]->60
+
+ranges of index
+list1[2:7] starting from 2 index and ends at 7th index(7 not included)
+result->cherry,grapes,mango,orange,False
+
+list1[1:4] stating index 1 ends at 4 (4 not included)
+result->banana,cherry,grapes
+
+list1[:7] starting from 0th  index ends at 7(7 not included)
+result->apple','banana','cherry','grapes','mango','orange',False
+
+list1[:4] starting from 0th index ends at 4(4 not included)
+result->apple','banana','cherry','grapes'
+
+list1[2:] slice all the items starting from 2nd index
+result->'cherry','grapes','mango','orange',False,True,20,60,9.5,'kiwi'
+
+list1[4:]slice all the items starting from 4th index
+
+'mango','orange',False,True,20,60,9.5,'kiwi'
+
+list1[2:9:2] 2-start index 9-stop-index(9 not included) 2-step index
+result ->cherry,mango,false,20
+
+list1[1:10:3] 3-startindex 10-stop-index(10 not included) 3-step index
+
+result->banana,mango,True
+
+list1[::3] startindex -0 step index -3
+
+result-apple,grapes,false,60
+
+
+list1[::2] startindex-0  step-index-2
+result->apple,cherry,mango,false,20,9.5
+
+list1[::-2] startindex -(-1) step-(-2) slicing from the end
+res->kiwi,60,True,orange,grapes,banana 
+
+list1[::-3] startindex-(-1) stepindex(-3)
+res->kiwi,20,orange,cherry,
